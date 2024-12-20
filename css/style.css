@@ -1,0 +1,183 @@
+/* 一般樣式 */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    /* 淺灰色文字 */
+    background-image: url('../images/background.png');
+    background-size: cover;
+    /* 或使用 contain */
+    background-position: top;
+    /* 確保圖片居中 */
+}
+
+/* 輪播圖 */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* 關於我們區域 */
+#about-us {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background.png');
+    color: #e0e0e0;
+}
+
+/* 服務區域 */
+#services {
+    background: linear-gradient(to right, #444444, #555555, #666666);
+    color: #e0e0e0;
+}
+
+#services .container {
+    max-width: 1200px;
+    /* 設定最大寬度 */
+}
+
+/* 聯絡區域 */
+#contact {
+    background: linear-gradient(to right, #2f2f2f, #4a4a4a, #636363);
+    color: #e0e0e0;
+}
+
+#contact .col-md-6 {
+    margin-bottom: 20px;
+    /* 根據需要調整間距 */
+}
+
+/* 導航列 */
+.navbar {
+    background: linear-gradient(to right, #444444, #555555, #666666);
+    background-color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 改變品牌名稱的字體、顏色和大小 */
+.navbar-brand {
+    font-family: 'Arial', sans-serif;
+    /* 可替換為您喜歡的字體 */
+    font-size: 28px;
+    /* 調整字體大小 */
+    font-weight: bold;
+    /* 加粗字體 */
+    color: #e0e0e0;
+    /* 設定字體顏色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* 添加文字陰影 */
+    transition: all 0.3s ease;
+    /* 平滑過渡 */
+}
+
+/* 滑鼠懸停時的效果 */
+.navbar-brand:hover {
+    color: #ff6600;
+    /* 懸停時改變顏色 */
+    transform: scale(1.1);
+    /* 放大效果 */
+}
+
+.nav-link {
+    color: #e0e0e0;
+}
+
+.nav-link:hover {
+    color: #f39c12;
+}
+
+/* 英雄區域 */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    color: #e0e0e0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.hero .btn {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+}
+
+/* 區域樣式 */
+.section {
+    padding: 1rem 0;
+}
+
+.section h2 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* 服務卡片樣式 */
+.services-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem 0;
+}
+
+.service-card-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.service-card {
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 滾動條樣式 */
+.services-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.services-carousel::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.services-carousel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* 輪播圖內部 */
+.carousel-inner img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+/* 頁腳樣式 */
+.footer {
+    background-color: #444444;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #f39c12;
+    text-decoration: none;
+}

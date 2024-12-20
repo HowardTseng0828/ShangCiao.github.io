@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>上巧工程行</title>
+
+    <!-- 移除 animate.css，若不需要使用動畫效果 -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> -->
+
+    <!-- 移除不必要的 Bootstrap 样式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- 使用 Google 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- 合併自己的 CSS 檔案，減少 HTTP 請求 -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">上巧工程行</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#">首頁</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#about-us">關於</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#services">服務項目</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#contact">聯絡我們</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>精心築夢 匠心出品</h1>
+            <p>專業工程服務，品質保證。</p>
+            <a href="#services" class="btn btn-primary btn-lg">了解更多</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>提供服務</h2>
+            <div class="services-carousel">
+                <div class="service-card-wrapper">
+                    <div class="card service-card">
+                        <div id="carouselWaterproofing" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/waterproofing1.png" class="d-block w-100" alt="防水抓漏 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="防水抓漏 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="防水抓漏 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselWaterproofing"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselWaterproofing"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">防水抓漏</h5>
+                            <h6 class="card-text">專業防水與結構修復</h6>
+                            <ul class="card-text">
+                                <li>外牆滲水修復</li>
+                                <li>裂縫注射補強</li>
+                                <li>結構滲水防治</li>
+                                <li>屋頂防水塗層與施工</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card service-card">
+                        <div id="carouselAwning" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/awning1.png" class="d-block w-100" alt="遮雨棚 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="遮雨棚 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="遮雨棚 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAwning"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAwning"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">採光罩</h5>
+                            <h6 class="card-text">提供高效能採光解決方案</h6>
+                            <ul class="card-text">
+                                <li>耐候材質，長效使用</li>
+                                <li>專業安裝，提升室內光線</li>
+                                <li>多樣化設計，適應各種建築風格</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card service-card">
+                        <div id="carouselTinHouse" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/tin-house1.png" class="d-block w-100" alt="鐵皮屋 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="鐵皮屋 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="鐵皮屋 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTinHouse"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTinHouse"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">鐵皮屋</h5>
+                            <h6 class="card-text">經濟實用的建築方案</h6>
+                            <ul class="card-text">
+                                <li>隔熱、防水設計</li>
+                                <li>堅固耐用，維護成本低</li>
+                                <li>多用途建造：倉庫、車棚等</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card service-card">
+                        <div id="carouselRollerDoor" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/default.png" class="d-block w-100" alt="鐵捲門 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="鐵捲門 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="鐵捲門 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRollerDoor"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselRollerDoor"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">鐵捲門</h5>
+                            <h6 class="card-text">穩固耐用的門面解決方案</h6>
+                            <ul class="card-text">
+                                <li>多種材質與色彩選擇</li>
+                                <li>防盜設計，增強安全性</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card service-card">
+                        <div id="carouselSteelStructure" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/steel-staircase.png" class="d-block w-100" alt="鋼構工程 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="鋼構工程 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="鋼構工程 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSteelStructure"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselSteelStructure"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">鋼構工程</h5>
+                            <h6 class="card-text">高強度結構設計與施工</h6>
+                            <ul class="card-text">
+                                <li>快速搭建，縮短施工週期</li>
+                                <li>專業鋼材選用，穩固耐用</li>
+                                <li>適用於工業廠房與大型建築</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card service-card">
+                        <div id="carouselForgedRailing" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/minimalist-style-railings.png" class="d-block w-100" alt="鍛造欄杆 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/industrial-style-railings.png" class="d-block w-100" alt="鍛造欄杆 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/default.png" class="d-block w-100" alt="鍛造欄杆 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselForgedRailing"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselForgedRailing"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">鍛造欄杆</h5>
+                            <h6 class="card-text">美觀與安全兼具的防護</h6>
+                            <ul class="card-text">
+                                <li>堅固耐用，防銹設計</li>
+                                <li>多種款式，符合需求</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="section bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>關於我們</h2>
+                    <p>自2005年成立以來，<strong>上巧工程行</strong>專注於工程領域，致力於提供高品質的鋼鐵結構、鐵製品製作與安裝服務。我們擁有多年的經驗，無論是鋼構建設、鐵皮屋搭建、鋼門窗製作，還是各類金屬結構的維修，我們都能提供客戶專業的解決方案。
+                    </p>
+                    <p>我們的服務範圍包括從設計、製作到安裝的全過程，並且始終秉持著精益求精的精神，確保每一個項目都符合最高的品質標準。我們專注於鋼鐵結構的穩定性與耐用性，並確保施工過程中的安全與效率。</p>
+                    <p>作為一家本地化的工程公司，我們深知每個客戶需求的獨特性，因此我們致力於提供量身訂製的解決方案。我們的團隊擁有豐富的現場經驗，並且能夠應對各種複雜的鐵製品加工與安裝挑戰。</p>
+                    <p>無論是大型鋼構工程還是小型修繕服務，我們都會用最專業的態度，為每一位客戶提供滿意的服務，與您一起共創更美好的未來。</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/businisecard.png" alt="關於我們" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center">聯絡我們</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5>地址</h5>
+                    <p>新竹縣竹東鎮中豐路二段264號</p>
+                    <a href="https://www.google.com/maps?q=新竹縣竹東鎮中豐路二段264號" target="_blank">
+                        <button class="btn btn-outline-primary">查看地圖</button>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h5>電話</h5>
+                    <p>您可以隨時致電我們，或者點擊下面的按鈕聯繫我們：</p>
+                    <p>電話：0955154866</p>
+                    <a href="tel:0955154866">
+                        <button class="btn btn-outline-primary">聯繫我</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5>電子郵件</h5>
+                    <p>有任何問題或需求，請透過以下電子郵件聯絡我們：</p>
+                    <p>電子郵件：k21582988@yahoo.com.tw</p>
+                    <a href="mailto:k21582988@yahoo.com.tw" class="btn btn-outline-primary">
+                        詢問報價
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h5>工作時間</h5>
+                    <p>我們的服務時間為：</p>
+                    <ul>
+                        <li>週一至週五：上午9:00 - 下午6:00</li>
+                        <li>週六：上午9:00 - 下午1:00</li>
+                        <li>週日：休息</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 上巧工程行. 版權所有. Design by <a href="https://github.com/HowardTseng0828" target="_blank">老闆兒子</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- 移除不必要的 Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
