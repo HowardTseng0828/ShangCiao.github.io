@@ -4,11 +4,11 @@
 
 ## 技術架構
 
-- HTML5
-- CSS3
-- Bootstrap 5（響應式設計，適配桌面、平板、手機）
-- Bootstrap Carousel（服務項目輪播展示）
-- 自訂樣式 `css/style.css`
+- HTML5（語意化標籤、單頁形象網站）
+- 純自訂 CSS3（CSS Grid + Flexbox 響應式排版，適配桌面、平板、手機）
+- 設計風格：亮色乾淨專業業者風（白底 + 信任藍主色 + 暖橘點綴）
+- Font Awesome 圖示、Google Fonts（Noto Sans TC / Rajdhani）
+- 無框架、無 build 步驟、無外部 JS 套件（僅少量原生 JS 處理手機選單）
 
 ## 本機執行
 
@@ -20,7 +20,7 @@
 
 ## 線上瀏覽
 
-網站已部署於 GitHub Pages：[https://ShangCiao.github.io](https://ShangCiao.github.io)
+網站部署於 **Cloudflare Pages**（部署步驟見 [DEPLOY.md](DEPLOY.md)）。
 
 ## 專案結構
 
@@ -28,6 +28,8 @@
 ShangCiao.github.io/
 ├── index.html          # 主頁面
 ├── css/
-│   └── style.css       # 自訂樣式
-└── images/             # 圖片資源
+│   └── style.css       # 自訂樣式（亮色設計 token + 各元件）
+├── images/             # 圖片資源
+├── _headers            # Cloudflare Pages 快取與安全標頭設定
+└── DEPLOY.md           # Cloudflare Pages 部署步驟（超新手版）
 ```

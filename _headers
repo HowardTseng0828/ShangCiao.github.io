@@ -1,0 +1,17 @@
+# Cloudflare Pages 標頭設定
+# 圖片、CSS 等靜態資源長快取（檔名不變時瀏覽器直接用快取）
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=86400
+
+# HTML 不要長快取，確保改版後使用者拿到最新版
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# 基本安全標頭
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
